@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './App.css';
-import ResultComponent from './components/ResultComponent';
 import KeyPadComponent from "./components/KeyPadComponent";
 
 class App extends Component {
@@ -62,6 +61,7 @@ class App extends Component {
         })
     };
 
+
     backspace = () => {
         this.setState({
             result: this.state.result.slice(0, -1)
@@ -72,8 +72,10 @@ class App extends Component {
         return (
             <div>
                 <div className="calculator-body">
-                    <h1 style>Simple Calculator</h1>
-                    <ResultComponent result={this.state.result}/>
+                    <h1>Simple Calculator</h1>
+                    <div className="result">
+                         <p>{this.state.result}</p>
+                     </div>
                     <KeyPadComponent onClick={this.onClick}/>
                 </div>
             </div>
