@@ -13,6 +13,7 @@
 .calculator-body {
   max-width: 400px;
   margin: auto;
+  align-items: center;
 }
 
 .button {
@@ -24,4 +25,10 @@ button {
   width: 25%;
   height: 60px;
   font-size: 30px;
+}
+h1
+{
+text-align: center;
+padding-top:20px;
+color:black
 }
